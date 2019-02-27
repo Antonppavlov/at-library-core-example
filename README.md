@@ -10,6 +10,8 @@ mvn clean test -Dbrowser=chrome allure:serve
 mvn clean test -Dbrowser=chrome -Dproxy=ip:port allure:serve
 
 
+curl -s https://aerokube.com/cm/bash | bash
+
 
 
 ./cm selenoid start --browsers 'firefox:51.0;firefox:55.0;chrome:66.0;android:6.0'
