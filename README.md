@@ -49,7 +49,7 @@ C=RU
 CM=selenoid.testspace.bcs.ru
 
 
-
+selenoid.testspace.bcs.ru
 
  domain-name.csr
  
