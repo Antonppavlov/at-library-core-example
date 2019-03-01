@@ -45,3 +45,5 @@ L=Novosibirsk
 S = Novosibirskaya obl.
 
 C=RU
+
+CM=selenoid.testspace.bcs.ru
