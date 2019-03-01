@@ -30,7 +30,10 @@ curl -s https://aerokube.com/cm/bash | bash
 ./cm selenoid start --vnc --browsers 'android:6.0;chrome:72.0;firefox:65.0;opera:58.0' --args  "-limit 15 -session-attempt-timeout 2m -service-startup-timeout 2m"
 
 
-# Selenoid:
+# SSL:
+
+openssl req -new -key private.key -out domain-name.csr
+
 Следующие атрибуты менять можно ТОЛЬКО после согласования с ДАТИ:
 
 O=BrokerCreditService Ltd.
