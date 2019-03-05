@@ -51,7 +51,6 @@ CM=selenoid.testspace.bcs.ru
 
 selenoid.testspace.bcs.ru
 
-[root@s-t-selenoid-01 apavlov]# cat private.key
 -----BEGIN RSA PRIVATE KEY-----
 Proc-Type: 4,ENCRYPTED
 DEK-Info: DES-EDE3-CBC,385ABE1D705F5343
