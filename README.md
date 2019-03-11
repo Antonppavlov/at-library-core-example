@@ -109,13 +109,67 @@ QAWuGhy2SL
 
 
 
-$ cat /etc/grid-router/quota/test.xml
+Ggr
+
+
+-создать по инструкции директории и пароли
+
+docker run -d -p 4444:4444 --name ggr -v /Users/antonpavlov/Documents/ggr/:/etc/grid-router:ro  aerokube/ggr:latest-release
+
+```xml
 <qa:browsers xmlns:qa="urn:config.gridrouter.qatools.ru">
-<browser name="firefox" defaultVersion="45.0">
-    <version number="45.0">
+<browser name="internet explorer" defaultVersion="11">
+    <version number="11">
         <region name="1">
-            <host name="localhost" port="4445" count="1"/>
+            <host name="192.168.31.77" port="4444" count="1"/>
+        </region>
+    </version>
+</browser>
+<browser name="chrome" defaultVersion="latest">
+    <version number="latest">
+        <region name="1">
+            <host name="192.168.31.198" port="4445" count="1"/>
         </region>
     </version>
 </browser>
 </qa:browsers>
+```
+
+selenoid
+
+docker run -d  --name selenoid  -p 4445:4444 -v /var/run/docker.sock:/var/run/docker.sock  -v /Users/antonpavlov/Documents/selenoid/config/:/etc/selenoid/:ro aerokube/selenoid:latest-release
+
+Добавил browser.json по path /Users/antonpavlov/Documents/selenoid/config
+
+```json
+{
+    "firefox": {
+        "default": "latest",
+        "versions": {
+            "latest": {
+                "image": "selenoid/firefox",
+                "port": "4444",
+                "path": "/wd/hub",
+                "tmpfs": {"/tmp":"size=512m"}
+            }
+        }
+    },
+    "chrome": {
+        "default": "latest",
+        "versions": {
+            "latest": {
+                "image": "selenoid/chrome",
+                "port": "4444",
+                "tmpfs": {"/tmp":"size=512m"}
+            }
+        }
+    }
+}
+
+```
+ggr-ui
+
+docker run -d --name ggr-ui -p 8888:8888 -v /Users/antonpavlov/Documents/ggr/quota/:/etc/grid-router/quota:ro aerokube/ggr-ui:latest-release
+Solenoid-ui
+
+docker run -d --name selenoid-ui  -p 8080:8080 aerokube/selenoid-ui --selenoid-uri=http://192.168.31.198:4444/
