@@ -13,7 +13,7 @@
         <dependency>
             <groupId>ru.bcs</groupId>
             <artifactId>at-library-core</artifactId>
-            <version>03.03.2019-test10</version>
+            <version>12.03.2019</version>
         </dependency>
     </dependencies>
 
