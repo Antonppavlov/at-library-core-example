@@ -30,3 +30,8 @@ allure:serve - запуск allure отчетов
 ```mvn
 -DbaseURI=https://url.you.need.v2
 ```
+
+
+
+
+2019/03/15 10:10:45 websocketproxy: couldn't upgrade websocket: the client is not using the websocket protocol: 'upgrade' token not found in 'Connection' header
