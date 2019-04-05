@@ -6,7 +6,7 @@ import org.junit.runner.RunWith;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-        tags = "@api",
+        tags = "@web",
         features = "src/test/resources/features",
         glue = {"ru.bcs.at.library.core", "ru.bcs.test.demo"}
 )
