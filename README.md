@@ -71,6 +71,63 @@ Selenoid
 
 ./cm selenoid start  --vnc  --port 4445 --browsers 'android:6.0;firefox;chrome;opera’ --args "-limit 20"
 
+{
+  "android": {
+    "default": "6.0",
+    "versions": {
+      "6.0": {
+        "image": "selenoid/vnc_android:6.0",
+        "port": "4444",
+        "path": "/wd/hub"
+      }
+    }
+  },
+  "chrome": {
+    "default": "73.0",
+    "versions": {
+      "72.0": {
+        "image": "selenoid/vnc_chrome:72.0",
+        "port": "4444",
+        "path": "/"
+      },
+      "73.0": {
+        "image": "selenoid/vnc_chrome:73.0",
+        "port": "4444",
+        "path": "/"
+      }
+    }
+  },
+  "firefox": {
+    "default": "66.0",
+    "versions": {
+      "65.0": {
+        "image": "selenoid/vnc_firefox:65.0",
+        "port": "4444",
+        "path": "/wd/hub"
+      },
+      "66.0": {
+        "image": "selenoid/vnc_firefox:66.0",
+        "port": "4444",
+        "path": "/wd/hub"
+      }
+    }
+  },
+  "opera": {
+    "default": "58.0",
+    "versions": {
+      "57.0": {
+        "image": "selenoid/vnc_opera:57.0",
+        "port": "4444",
+        "path": "/"
+      },
+      "58.0": {
+        "image": "selenoid/vnc_opera:58.0",
+        "port": "4444",
+        "path": "/"
+      }
+    }
+  }
+}
 
 
 docker run -d --name selenoid-ui -p 8080:8080 aerokube/selenoid-ui --selenoid-uri=http://172.20.10.10:4445
