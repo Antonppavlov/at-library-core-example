@@ -11,9 +11,9 @@
 
     <dependencies>
         <dependency>
-            <groupId>ru.bcs</groupId>
-            <artifactId>at-library-core</artifactId>
-            <version>01.04.2019-no-rp1</version>
+    <groupId>ru.bcs</groupId>
+    <artifactId>at-library-core</artifactId>
+    <version>04.04.2019</version>
         </dependency>
     </dependencies>
 
