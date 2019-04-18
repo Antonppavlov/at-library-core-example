@@ -9,12 +9,11 @@ clean test -Dbrowser=chrome  -Djava.net.useSystemProxies=true allure:serve
 
 Запуск локально на windows
 ```mvn
-clean test -Dbrowser=chrome -Dwebdriver.chrome.driver="path of chrome.exe" allure:serve
+clean test -Dbrowser="internet explorer" -Dwebdriver.ie.driver="C:\\Program Files\\Selenium\\Drivers\\IEDriver\\IEDriverServer.exe" allure:serve
 ```
-
 Запуск удаленно
 ```mvn
-clean test -Dbrowser=chrome -Dremote=http://selenoid.t-global.bcs:4444/wd/hub/ -Dproxy=http://172.18.62.68:8080 allure:serve
+clean test -Dbrowser="internet explorer" -Dremote=http://test:test-password@selenoid.t-global.bcs:4444/wd/hub/ -Dproxy=http://172.18.62.68:8080 allure:serve
 ```
 Просмотр в Selenoid:
 =========================
