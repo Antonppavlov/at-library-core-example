@@ -5,7 +5,7 @@ curl -s https://aerokube.com/cm/bash | bash
 
 Selenoid
 
-./cm selenoid start  --vnc  --port 4445 --browsers 'android:6.0;firefox;chrome;opera’ --args "-limit 20"
+./cm selenoid start  --vnc  --port 4445 --browsers 'android:6.0;firefox;chrome;opera’ --args "-limit 25 -timeout 3m -max-timeout 2h0m0s"
 
 
 docker run -d --name selenoid-ui -p 8080:8080 aerokube/selenoid-ui --selenoid-uri=http://172.20.10.10:4445
