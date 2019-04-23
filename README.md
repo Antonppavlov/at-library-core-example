@@ -15,6 +15,14 @@ clean test -Dbrowser="internet explorer" -Dwebdriver.ie.driver="C:\\Program File
 ```mvn
 clean test -Dbrowser="internet explorer" -Dremote=http://test:test-password@selenoid.t-global.bcs:4444/wd/hub/ -Dproxy=http://172.18.62.68:8080 allure:serve
 ```
+Запуск тестов с тегами (И)
+```mvn
+clean test allure:serve -Dcucumber.options="--tags @api --tags @web --plugin io.qameta.allure.cucumber4jvm.AllureCucumber4Jvm"
+```
+Запуск тестов с тегами (ИЛИ)
+```mvn
+clean test allure:serve -Dcucumber.options="--tags @api,@web --plugin io.qameta.allure.cucumber4jvm.AllureCucumber4Jvm"
+```
 Просмотр в Selenoid:
 =========================
 ```url
