@@ -1,22 +1,10 @@
-# language: ru
-@api
-@bcs
-Функция: Создание GET запроса и проверка
-
-  Сценарий: Создание GET запроса и проверка
-    И выполнен GET запрос на URL "calculation" с headers и parameters из таблицы. Полученный ответ сохранен в переменную "Ответ от серверва"
-      | PARAMETER | gender   | true |
-      | PARAMETER | age      | 28   |
-      | PARAMETER | height   | 188  |
-      | PARAMETER | weight   | 70   |
-      | PARAMETER | activity | 1    |
-      | PARAMETER | target   | 1    |
-
-
-    И в json ответа "Ответ от серверва" значения равны значениям из таблицы
-      | calories      | 2447 |
-      | proteins      | 162  |
-      | fats          | 61   |
-      | carbohydrates | 300  |
-
-
+## language: ru
+#@api
+#@bcs
+#Функция: Создание GET запроса и проверка
+#
+#  Сценарий: Создание GET запроса и проверка 1
+#    И выполнен GET запрос на URL "https://gateway.tusvc.bcs.ru/bcs-ef2-2-ef-bms-clientcard/api/v1_0/users/current/permissions". Полученный ответ сохранен в переменную "Ответ от серверва"
+#
+#  Сценарий: Создание GET запроса и проверка 2
+#    И выполнен GET запрос на URL "apt.v1_0.users". Полученный ответ сохранен в переменную "Ответ от серверва"
