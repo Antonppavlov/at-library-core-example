@@ -15,12 +15,12 @@ public class AddToCardPage extends CorePage {
     private SelenideElement money;
 
     @Optional
-    @Name("button_back")
+    @Name("Назад")
     @FindBy(xpath = "//XCUIElementTypeButton[@name=\"button_back\"]")
     private SelenideElement button_back;
 
     @Optional
-    @Name("buy_it_here")
+    @Name("Купить")
     @FindBy(xpath = "//XCUIElementTypeButton[@name=\"buy_it_here\"]")
     private SelenideElement buy_it_here;
 

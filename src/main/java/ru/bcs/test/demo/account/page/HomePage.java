@@ -45,12 +45,12 @@ public class HomePage extends CorePage {
     private SelenideElement money;
 
     @Optional
-    @Name("add_to_cart")
+    @Name("В корзину")
     @FindBy(xpath = "//XCUIElementTypeButton[@name=\"add_to_cart\"]")
     private SelenideElement add_to_cart;
 
     @Optional
-    @Name("buy_now_button")
+    @Name("Купить")
     @FindBy(xpath = "//XCUIElementTypeButton[@name=\"buy_now_button\"]")
     private SelenideElement buy_now_button;
 

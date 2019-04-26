@@ -15,7 +15,7 @@ public class BuyPage extends CorePage {
     private SelenideElement money;
 
     @Optional
-    @Name("button_back")
+    @Name("Назад")
     @FindBy(xpath = "//XCUIElementTypeButton[@name=\"button_back\"]")
     private SelenideElement button_back;
 
