@@ -10,23 +10,49 @@ import ru.bcs.at.library.core.cucumber.api.CorePage;
 public class HomePage extends CorePage {
 
     @Optional
-    @Name("Яйцо 1")
-    @FindBy(xpath = "(//XCUIElementTypeButton[@name=\"egg\"])[1]")
-    private SelenideElement egg;
+    @Name("iphone")
+    @FindBy(xpath = "//XCUIElementTypeButton[@name=\"iphone\"]")
+    private SelenideElement iphone;
 
     @Optional
-    @Name("Яйцо 2")
-    @FindBy(xpath = "(//XCUIElementTypeButton[@name=\"egg\"])[2]")
-    private SelenideElement egg2;
+    @Name("mouse")
+    @FindBy(xpath = "//XCUIElementTypeButton[@name=\"mouse\"]")
+    private SelenideElement mouse;
 
     @Optional
-    @Name("Яйцо 3")
-    @FindBy(xpath = "(//XCUIElementTypeButton[@name=\"egg\"])[3]")
-    private SelenideElement egg3;
+    @Name("ps4")
+    @FindBy(xpath = "//XCUIElementTypeButton[@name=\"ps4\"]")
+    private SelenideElement ps4;
 
     @Optional
-    @Name("Кнопка Старт")
-    @FindBy(xpath = "//XCUIElementTypeButton[@name=\"start\"]")
-    private SelenideElement buttonStart;
+    @Name("photo")
+    @FindBy(xpath = "//XCUIElementTypeButton[@name=\"photo\"]")
+    private SelenideElement photo;
+
+    @Optional
+    @Name("keyboard")
+    @FindBy(xpath = "//XCUIElementTypeButton[@name=\"keyboard\"]")
+    private SelenideElement keyboard;
+
+    @Optional
+    @Name("notebook")
+    @FindBy(xpath = "//XCUIElementTypeButton[@name=\"notebook\"]")
+    private SelenideElement notebook;
+
+    @Optional
+    @Name("money")
+    @FindBy(xpath = "//XCUIElementTypeStaticText[@name=\"money\"]")
+    private SelenideElement money;
+
+    @Optional
+    @Name("add_to_cart")
+    @FindBy(xpath = "//XCUIElementTypeButton[@name=\"add_to_cart\"]")
+    private SelenideElement add_to_cart;
+
+    @Optional
+    @Name("buy_now_button")
+    @FindBy(xpath = "//XCUIElementTypeButton[@name=\"buy_now_button\"]")
+    private SelenideElement buy_now_button;
 
 }
+
