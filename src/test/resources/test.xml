@@ -84,8 +84,8 @@
         </version>
     </browser>
 
-    <browser name="iPhone 7+" defaultVersion="12.2">
-        <version number="11.4.1">
+    <browser name="iPhone (Тестировщик)" defaultVersion="12.2">
+        <version number="12.2">
             <region name="1">
                 <host name="172.17.88.30" port="8080" count="1" scheme="http"/>
             </region>
