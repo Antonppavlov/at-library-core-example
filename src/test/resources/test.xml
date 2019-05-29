@@ -107,4 +107,12 @@
             </region>
         </version>
     </browser>
+
+    <browser name="iPhone10r" defaultVersion="12.1">
+        <version number="12.1">
+            <region name="1">
+                <host name="172.17.88.30" port="8080" count="1" scheme="http"/>
+            </region>
+        </version>
+    </browser>
 </qa:browsers>
