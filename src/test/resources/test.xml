@@ -76,14 +76,14 @@
         </version>
     </browser>
 
-       <browser name="POCOPHONE F1" defaultVersion="9">
+    <browser name="POCOPHONE F1" defaultVersion="9">
         <version number="9">
             <region name="1">
                 <host name="172.17.88.30" port="8080" count="1" scheme="http"/>
             </region>
         </version>
     </browser>
- 
+
     <browser name="iPhone (Тестировщик)" defaultVersion="12.2">
         <version number="12.2">
             <region name="1">
@@ -91,9 +91,73 @@
             </region>
         </version>
     </browser>
- 
+
     <browser name="iPhone10r" defaultVersion="12.1">
         <version number="12.1">
+            <region name="1">
+                <host name="172.17.88.30" port="8080" count="1" scheme="http"/>
+            </region>
+        </version>
+    </browser>
+
+    <browser name="iPhone 7plus" defaultVersion="12.3">
+        <version number="12.3">
+            <region name="1">
+                <host name="172.17.88.30" port="8080" count="1" scheme="http"/>
+            </region>
+        </version>
+    </browser>
+
+    <browser name="Honor 10" defaultVersion="8.1.0">
+        <version number="8.1.0">
+            <region name="1">
+                <host name="172.17.88.30" port="8080" count="1" scheme="http"/>
+            </region>
+        </version>
+    </browser>
+
+    <browser name="HUAWEI P10 lite" defaultVersion="7.0">
+        <version number="7.0">
+            <region name="1">
+                <host name="172.17.88.30" port="8080" count="1" scheme="http"/>
+            </region>
+        </version>
+    </browser>
+
+    <browser name="meizu M8" defaultVersion="8.1.0">
+        <version number="8.1.0">
+            <region name="1">
+                <host name="172.17.88.30" port="8080" count="1" scheme="http"/>
+            </region>
+        </version>
+    </browser>
+
+    <browser name="Galaxy A5 (bcs2016)" defaultVersion="6.0.1">
+        <version number="6.0.1">
+            <region name="1">
+                <host name="172.17.88.30" port="8080" count="1" scheme="http"/>
+            </region>
+        </version>
+    </browser>
+
+    <browser name="Nokia 6.1" defaultVersion="9">
+        <version number="9">
+            <region name="1">
+                <host name="172.17.88.30" port="8080" count="1" scheme="http"/>
+            </region>
+        </version>
+    </browser>
+
+    <browser name="LG G6" defaultVersion="8.0.0">
+        <version number="8.0.0">
+            <region name="1">
+                <host name="172.17.88.30" port="8080" count="1" scheme="http"/>
+            </region>
+        </version>
+    </browser>
+
+    <browser name="Galaxy A8 (2018)" defaultVersion="8.0.0">
+        <version number="8.0.0">
             <region name="1">
                 <host name="172.17.88.30" port="8080" count="1" scheme="http"/>
             </region>
