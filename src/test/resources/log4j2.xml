@@ -33,22 +33,22 @@
             <AppenderRef ref="File"/>
             <!--<AppenderRef ref="ReportPortalAppender"/>-->
         </Root>
-<!--        <Logger name="io.qameta.allure.AllureLifecycle" level="debug" additivity="false">-->
-<!--            <AppenderRef ref="Console" level="error"/>-->
-<!--            <AppenderRef ref="File"/>-->
-<!--        </Logger>-->
+        <!--        <Logger name="io.qameta.allure.AllureLifecycle" level="debug" additivity="false">-->
+        <!--            <AppenderRef ref="Console" level="error"/>-->
+        <!--            <AppenderRef ref="File"/>-->
+        <!--        </Logger>-->
         <Logger name="ru.bcs.at.library.core.log.Log4jRestAssuredFilter" level="trace" additivity="false">
             <AppenderRef ref="Console"/>
             <AppenderRef ref="File"/>
         </Logger>
         <!--<Logger name="ru.bcs.at.library.core.core.formatters.HamcrestAllureReporter" level="debug" additivity="false">-->
-            <!--<AppenderRef ref="Console"/>-->
-            <!--<AppenderRef ref="File"/>-->
-            <!--<AppenderRef ref="ReportPortalAppender"/>-->
+        <!--<AppenderRef ref="Console"/>-->
+        <!--<AppenderRef ref="File"/>-->
+        <!--<AppenderRef ref="ReportPortalAppender"/>-->
         <!--</Logger>-->
         <!--<Logger name="ru.bcs.at.library.core.core.formatters.HamcrestHelper" level="info" additivity="false">-->
-            <!--<AppenderRef ref="Console" level="warn"/>-->
-            <!--<AppenderRef ref="File"/>-->
+        <!--<AppenderRef ref="Console" level="warn"/>-->
+        <!--<AppenderRef ref="File"/>-->
         <!--</Logger>-->
         <Logger name="ru.bcs" level="trace" additivity="false">
             <AppenderRef ref="Console"/>

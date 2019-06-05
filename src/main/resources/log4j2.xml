@@ -4,7 +4,8 @@
         <Property name="filename">logs/logs.log</Property>
         <Property name="logLevelPattern">%5p</Property>
         <Property name="logExceptoinConvertionWord">%xwEx</Property>
-        <Property name="logPatternConsole">%d{yyyy-MM-dd HH:mm:ss.SSS} ${logLevelPattern} [%15.15t] %C{1.} : %m%n</Property>
+        <Property name="logPatternConsole">%d{yyyy-MM-dd HH:mm:ss.SSS} ${logLevelPattern} [%15.15t] %C{1.} : %m%n
+        </Property>
     </Properties>
     <Appenders>
         <Console name="STDOUT" target="SYSTEM_OUT">

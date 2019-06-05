@@ -2,12 +2,12 @@ package ru.bcs.test.demo.dolgov.ios;
 
 import org.junit.After;
 import org.junit.Test;
-import ru.bcs.test.demo.dolgov.ios.IOSDriversMethods;
 
 import java.net.MalformedURLException;
 
 public class TestAppIOS {
     IOSDriversMethods iosDriversMethods;
+
     @Test
     public void test() throws MalformedURLException {
         System.out.println("------------------------------------");

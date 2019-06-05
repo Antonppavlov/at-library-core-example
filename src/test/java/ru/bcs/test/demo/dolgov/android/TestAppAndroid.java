@@ -2,7 +2,6 @@ package ru.bcs.test.demo.dolgov.android;
 
 import org.junit.After;
 import org.junit.Test;
-import ru.bcs.test.demo.dolgov.android.AndroidDriversMethods;
 
 import java.net.MalformedURLException;
 
