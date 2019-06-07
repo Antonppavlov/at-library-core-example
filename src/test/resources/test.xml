@@ -163,4 +163,20 @@
             </region>
         </version>
     </browser>
+
+    <browser name="Nokia 6" defaultVersion="8.1.0">
+        <version number="8.1.0">
+            <region name="1">
+                <host name="172.17.123.101" port="8080" count="1" scheme="http"/>
+            </region>
+        </version>
+    </browser>
+
+    <browser name="Nokia 6" defaultVersion="8.1.0">
+        <version number="8.1.0">
+            <region name="1">
+                <host name="172.17.123.101" port="8080" count="1" scheme="http"/>
+            </region>
+        </version>
+    </browser>
 </qa:browsers>
