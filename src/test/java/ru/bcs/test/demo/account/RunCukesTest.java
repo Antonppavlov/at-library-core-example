@@ -1,4 +1,4 @@
-package ru.bcs.test.demo.selenoid;
+package ru.bcs.test.demo.account;
 
 import cucumber.api.CucumberOptions;
 import cucumber.api.junit.Cucumber;
@@ -8,7 +8,7 @@ import org.junit.runner.RunWith;
 @CucumberOptions(
         tags = "@mobile",
         features = "src/test/resources/features",
-        glue = {"ru.bcs.at.library.core", "ru.bcs.test.demo"}
+        glue = {"ru.bcs"}
 )
 public class RunCukesTest {
 }

@@ -36,7 +36,7 @@ public class HomePage extends CorePage {
 
     @Optional
     @Name("notebook")
-    @FindBy(xpath = "//XCUIElementTypeButton[@name=\"notebook \"]\n")
+    @FindBy(xpath = "//XCUIElementTypeButton[@name=\"notebook\"]\n")
     private SelenideElement notebook;
 
     @Optional

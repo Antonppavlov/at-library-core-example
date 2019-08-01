@@ -12,8 +12,8 @@
     <dependencies>
         <dependency>
             <groupId>ru.bcs</groupId>
-            <artifactId>at-library-core</artifactId>
-            <version>21.04.2019-test2</version>
+            <artifactId>at-library-mobile</artifactId>
+            <version>20.07.2019</version>
         </dependency>
     </dependencies>
 

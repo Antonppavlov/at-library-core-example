@@ -1,35 +1,26 @@
 # at-library-core-example
 
-Для запуска автотестов соберите проект командами:
+При загрузке страницы будут учитываться элементы, описанные в блоке
+
+
+После подключения всех плагинов и зависимостей вы можете запускать проект автотестов командами:
 =========================
-Запуск локально на ubuntu
+
+
+- Запуск удаленно на Selenoid
 ```mvn
-clean test -Dbrowser=chrome  -Djava.net.useSystemProxies=true allure:serve
+clean test -DplatformName=iOS -DdeviceName="iPhone 6s" -DplatformVersion=12.4 -Dapp=ru.admitadteam.SimpleScoreSwift -Dselenide.remote=http://test:test-password@selenoid.t-global.bcs:4444/wd/hub/ -Dproxy=http://172.18.62.68:8080 allure:serve
+```
+- Запуск тестов по тегам (И)
+```mvn
+clean test -DplatformName=iOS -DdeviceName="iPhone 6s" -DplatformVersion=12.4 -Dapp=ru.admitadteam.SimpleScoreSwift -Dselenide.remote=http://test:test-password@selenoid.t-global.bcs:4444/wd/hub/ -Dproxy=http://172.18.62.68:8080 -Dcucumber.options="--tags @api --tags @web --plugin io.qameta.allure.cucumber4jvm.AllureCucumber4Jvm --plugin com.epam.reportportal.cucumber.ScenarioReporter"
+```
+- Запуск тестов по тегам (ИЛИ)
+```mvn
+clean test -DplatformName=iOS -DdeviceName="iPhone 6s"  -Dapp=ru.admitadteam.SimpleScoreSwift -Dselenide.remote=http://test:test-password@selenoid.t-global.bcs:4444/wd/hub/ -Dproxy=http://172.18.62.68:8080 -Dcucumber.options="--tags @api,@web --plugin io.qameta.allure.cucumber4jvm.AllureCucumber4Jvm --plugin com.epam.reportportal.cucumber.ScenarioReporter"
 ```
 
-Запуск локально на windows
-```mvn
-clean test -Dbrowser="internet explorer" -Dwebdriver.ie.driver="C:\\Program Files\\Selenium\\Drivers\\IEDriver\\IEDriverServer.exe" allure:serve
-```
-Запуск удаленно
-```mvn
-clean test -Dbrowser="internet explorer" -Dremote=http://test:test-password@selenoid.t-global.bcs:4444/wd/hub/ -Dproxy=http://172.18.62.68:8080 allure:serve
-```
-Запуск тестов с тегами (И)
-```mvn
-clean test allure:serve -Dcucumber.options="--tags @api --tags @web --plugin io.qameta.allure.cucumber4jvm.AllureCucumber4Jvm"
-```
-Запуск тестов с тегами (ИЛИ)
-```mvn
-clean test allure:serve -Dcucumber.options="--tags @api,@web --plugin io.qameta.allure.cucumber4jvm.AllureCucumber4Jvm"
-```
-Просмотр в Selenoid:
-=========================
-```url
-http://selenoid.t-global.bcs/#/
-```
-
-Объяснение:
+Пояснение к командам:
 =========================
 
 ```mvn
@@ -45,18 +36,21 @@ allure:serve - запуск allure отчетов
 ```
 
 ```mvn
--Dbrowser=chrome - использовать браузер chrome для прогона тестов
+-DplatformName=iOS - передается платформа на которой будут запущены тесты
 ```
 
 ```mvn
--Djava.net.useSystemProxies=true - установив для этого свойства значение true, использовать настройки прокси-сервера системы
+-DdeviceName="iPhone 6s" - передается имя девайса на котором будут запущены тесты
 ```
-```mvn
--Dremote=http://selenoid.t-global.bcs:4444/wd/hub/ -Dproxy=http://172.18.62.68:8080 - для запуска тестов на selenoid
-```
-Чтобы установить базовый url(для api и ui тестов) его можно указать в application.properties по ключу baseURI=https://ef.tusvc.bcs.ru
-или передать параметром (если передан параметр и присутсивует в application.properties то будет использован тот что передан параметром)
 
 ```mvn
--DbaseURI=https://url.you.need
+-DplatformVersion=12.4 - передается версия платформы на которой будут запущены тесты
+```
+
+```mvn
+-Dapp=ru.admitadteam.SimpleScoreSwift - передается название проекта который будет запущен для прогона тестов
+```
+
+```mvn
+-Dselenide.remote=http://test:test-password@selenoid.t-global.bcs:4444/wd/hub/ -Dproxy=http://172.18.62.68:8080 - для запуска тестов на selenoid
 ```
